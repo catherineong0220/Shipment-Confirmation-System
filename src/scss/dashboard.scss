@@ -1,0 +1,47 @@
+.scs-container {
+  background-color: #f7fafc;
+  min-height: 100vh;
+  padding: 40px 0;
+
+  .table-wrapper {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+
+    table {
+      table-layout: fixed;
+      width: 100%;
+    }
+
+    thead th {
+      background-color: #2b6cb0; 
+      color: white;
+      text-transform: none;
+      font-size: 14px;
+    }
+
+    tbody tr {
+      height: 75px; 
+      transition: background 0.2s;
+
+      &:hover { background-color: #f7fafc; }
+      &.selected-row { background-color: #ebf8ff; }
+
+      &.editing-row {
+        background-color: #f0f9ff !important; 
+      }
+    }
+
+    .edit-input {
+      background-color: white !important;
+      border: 1px solid #3182ce !important; 
+      font-size: 16px !important;
+      height: 40px !important;
+      
+      &:focus {
+        box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.4);
+      }
+    }
+  }
+}
