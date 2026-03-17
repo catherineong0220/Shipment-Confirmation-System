@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Shipment Confirmation System (SCS) - User Management
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React-based user management dashboard built as part of a technical assessment. It features a robust UI for viewing, editing, and managing user data fetched from a remote API.
 
-## Available Scripts
+## 🚀 Features & Requirements Fulfilled
 
-In the project directory, you can run:
+[cite_start]According to the **React-SCS.docx** requirements[cite: 1]:
 
-### `npm start`
+- [cite_start]**Data Fetching**: Consumes the ReqRes API using `axios` and `async/await`[cite: 2, 4, 17].
+- [cite_start]**State Management**: Implemented with **React Query** for efficient data synchronization and loading states[cite: 4].
+- [cite_start]**User List**: Displays user avatar, first name, last name, and email in a responsive table[cite: 3].
+- [cite_start]**View Detail**: Click on a user's name or avatar to view their full profile in a modal[cite: 6].
+- **Inline Editing**: 
+  - [cite_start]Each row features an "Edit" button[cite: 7].
+  - [cite_start]Clicking "Edit" enables inline input fields and toggles "Save/Cancel" buttons[cite: 8, 16].
+  - [cite_start]"Save" updates the local state, and "Cancel" reverts changes[cite: 9, 15].
+- **Bulk Delete**:
+  - [cite_start]Checkbox selection for individual rows and a "Select All" header checkbox[cite: 11, 12].
+  - [cite_start]**Confirmation Dialog**: A custom Modal triggers before removal to ensure safe deletion[cite: 13, 14].
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [cite_start]**Framework**: React (Create React App)[cite: 18].
+- **Styling**: Chakra UI (Components) & SCSS (Custom Layout Locking).
+- **Data Management**: @tanstack/react-query.
+- **HTTP Client**: Axios.
 
-### `npm test`
+## 📦 Installation & Setup
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone the repository**:
+   ```bash
+   git clone [https://gitlab.com/catherineong0220/shipment-confirmation-system.git](https://gitlab.com/catherineong0220/shipment-confirmation-system.git)
