@@ -15,7 +15,7 @@ export const fetchUsers = async () => {
       firstName: user.first_name,
       lastName: user.last_name,
       email: user.email,
-      avatar: user.avatar
+        avatar: `https://images.weserv.nl/?url=${encodeURIComponent(user.avatar)}`
     }));
   } catch (error) {
     console.error('API Error:', error);
