@@ -22,9 +22,9 @@ function Dashboard() {
     <Container maxW="container.xl" className="dashboard">
       <Stack className="dashboard__header" direction="row" justify="space-between" mb={6} align="center">
         <Heading size="lg" className="dashboard__title">Shipment Confirmation System</Heading>
-        <Button 
-          colorScheme="red" 
-          onClick={actions.onDeleteOpen} 
+        <Button
+          colorScheme="red"
+          onClick={actions.onDeleteOpen}
           isDisabled={selectedIds.length === 0}
         >
           Delete Selected ({selectedIds.length})
@@ -36,10 +36,10 @@ function Dashboard() {
           <Thead className="user-table__head">
             <Tr>
               <Th width="60px">
-                <Checkbox 
-                  colorScheme="whiteAlpha" 
-                  onChange={(e) => actions.toggleSelectAll(e.target.checked)} 
-                  isChecked={selectedIds.length === users.length && users.length > 0} 
+                <Checkbox
+                  colorScheme="whiteAlpha"
+                  onChange={(e) => actions.toggleSelectAll(e.target.checked)}
+                  isChecked={selectedIds.length === users.length && users.length > 0}
                 />
               </Th>
               <Th width="100px">Avatar</Th>
@@ -55,8 +55,8 @@ function Dashboard() {
               const isSelected = selectedIds.includes(user.id);
 
               return (
-                <Tr 
-                  key={user.id} 
+                <Tr
+                  key={user.id}
                   className={`user-table__row ${isSelected ? 'user-table__row--selected' : ''} ${isEditing ? 'user-table__row--editing' : ''}`}
                 >
                   <Td><Checkbox isChecked={isSelected} onChange={() => actions.toggleSelect(user.id)} /></Td>
